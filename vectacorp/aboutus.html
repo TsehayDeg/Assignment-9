@@ -7,16 +7,19 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/layout.css">
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.mobilemenu.js"></script>
+    <script   src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
 	<script>
+        
 		$(document).ready(function(){
 			$('#responsive-menu').mobileMenu();
+            $( document ).tooltip();
 		});
 	</script>
 </head>
@@ -28,11 +31,11 @@
 		
 		<nav class="thirteen columns">
 			<ul id="responsive-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="solutions.html">Solutions</a></li>
-				<li><a href="support.html">Support</a></li>
-				<li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="index.html" title="Vecta Corporation provides scalable business solutions to help companies">Home</a></li>
+				<li><a href="aboutus.html" title="Vecta Corporation provides scalable business solutions">About Us</a></li>
+				<li><a href="solutions.html" title="Vecta Corp. offers 3 solutions for prospecting, converting, and retaining customers">Solutions</a></li>
+				<li><a href="support.html" title="With innovative approaches and advanced methodologies">Support</a></li>
+				<li><a href="contactus.html" title="Vecta Corporation provides scalable business">Contact Us</a></li>
 			</ul>
 		</nav>
 		
