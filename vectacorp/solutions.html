@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to Vecta Corp.</title>
+	<title>Solutions</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/skeleton.css">
@@ -14,10 +14,42 @@
     <script   src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/backtoTop.min.js"></script>
 	<script>
+    
 		$(document).ready(function(){
 			$('#responsive-menu').mobileMenu();
             $( document ).tooltip();
+            $("#testimonials").sticky({topSpacing:0});
+            $("#scroll-to-top").illBeBack({
+
+  offset        : 250,
+  speed         : 200,
+  duration      : 500,
+  hoverDuration : 300,
+  ownStyle : false,
+  round    : false,
+  zIndex   : 1000,
+  size     : 64,
+  top    : 'auto',
+  left   : 'auto',
+  bottom : 30,
+  right  : 30,
+  bgColor : 'rgba(30, 30, 30, 0.4)',
+  hoverBgColor : 'rgba(30, 30, 30, 0.8)',
+  bgPosition : '50% 50%',
+  bgSize : '50%',
+  bgRepeat : 'no-repeat',
+  bgImage : "url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAA8CAMAAACuCk+GAAAAVFBMVEUAAAD" +
+ "///////////////////////////////////////////////////////////////////////////////////////////////////////////" +
+ "8wXzyWAAAAHHRSTlMAv3FsR04ETZV7qzmMQwNjpYSBbbaedD8lCCghrxzLjAAAATlJREFUeAG10ctOwzAUhOHpBePYSdM2vbTw/u+JkIyUs" +
+ "mCU/5BZ+kjfv7AWLNVtn3M/1YNW2b1s2o51DX+3mW38f3+7edluZZ8XvM8L3ucF7/MC93nB+7zgfV7wPi9wnxe8zwve5wXv84L3eYH7vsB9" +
+  "X+A+L<a href="http://www.jqueryscript.net/tags.php?/3D/">3D</a>fF7jvC9z3Be7zAvd9gfu2wH1T4L4pcH//7gpBX7KFoL+ggPwFBeSDAvDlC9AHBeCDAvClN18APigAHxS8L1gAPijsqO8LoyQN3Pe" +
+ "FKj0L933hmDSEfFu4q4v5rnDTNeibQlYJ+qZw1DXom0LWOeibQqd90DeFQc8L932hpHaK+n8yHfdd4abvpTP2TaE7qBWgbwo/vpROxDeF5r" +
+ "fC7B8ug/D2M397eD2V9t5/KrBHbkwZ9GupTn0+jQ8F9zGecj/VpLYvzkEQTeC4sD8AAAAASUVORK5CYII=\")"
+});
+
+
 		});
 	</script>
 </head>
@@ -36,21 +68,80 @@
 				<li><a href="contactus.html" title="Vecta Corporation provides scalable business">Contact Us</a></li>
 			</ul>
 		</nav>
-		
+		<a href="" id="scroll-to-top"></a>
+
 		<header class="sixteen columns">
 			<img src="images/header.gif" class="scale-with-grid" alt="">
 		</header>
 		
 		<section id="welcome" class="eleven columns">
 			<h4>Our Solutions</h4>
+            
+           <h5 id="vP"> vProspect 2.0</h5>
+
+<p>Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience. vProspect can help your business:
+
+Define your target audience and competition.
+
+Research your competition and your target audience's behavior, needs, technical know-how level, etc.
+
+Establish a conceptual and visual identity that corresponds to the defined direction of the company.
+
+Ensure consistency across all media.
+
+Establish corporate guidelines for cohesiveness of any future developments.
+
+Define and/or re-defining your service and/or product offerings.
+
+Define expansion plans and strategies.
+
+Implement Search Engine Optimization of all Online materials.</p>
+
+Back to top
+
+<h5 id="vC">vConvert 2.0</h5>
+
+Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level. vConvert can help your business:
+
+Build a visual and functional user front end that focuses exclusively on providing an exceptional user experience while conveying company, service and product information.
+
+Cause the desired emotional response in a user to facilitate conversion to a client.
+
+Build sites that move beyond merely conveying information. They advertise, motivate, excite and inspire. Users are more likely to remember and recommend your site.
+
+Research your target audience's behavior, needs, technical know-how and level, etc.
+
+Develop any applicable back-end programs to facilitate user interaction with the company and offerings on a highly functional level to allow any kind of online transactions and a completely centralized information collection and access point, accessible from any location.
+
+Create an architecture to display the site content and information in a logical and easy to access manner. Facilitating thereby the desired ease, for the user to find what they are looking for quickly and easily. Allowing the user to focus on the subject at hand rather than searching for information on the site.
+
+Back to top
+
+<h5 id="vR">vRetain 1.0</h5>
+
+Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues. vRetain can help your business:
+
+Streamline existing business infrastructures by utilizing technology for automation, information centralization, and information sharing among all business units and departments, as well as efficient prospect & customer tracking and interaction within the company.
+
+Collect crucial information, data and statistics that allow a company to keep in touch with users in a very customized, highly targeted way.
+
+Analyze site visitor behavior through traffic analysis, usability studies and interactive polling. Recommending and making site and application adjustments to improve usability and user experience.
+
+Back to top
 
 			<p>&nbsp;</p>
 		</section>
 		
-		<section id="testimonials" class="five columns">
+		<section id="testimonials" class="five columns" style="position:fixed; top: 370px">
 			<h4>Quick Nav</h4>
 
 			<!-- INSERT ACCORDION HERE -->
+            <ul>
+            
+			<li><a href="#vP">vProspect 2.0 </a></li>
+			<li><a href="#vC">vConvert 2.0</a></li>
+			<li><a href="#vR">vRetain 1.0</a></li>
+		  </ul>
 		</section>
 	</main>
 </body>

@@ -13,11 +13,36 @@
 	<![endif]-->
     <script   src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="js/jquery.mobilemenu.js"></script>
+    <style>
+    fieldset {
+      border: 0;
+    }
+    label {
+      display: block;
+      margin: 30px 0 0 0;
+    }
+    .overflow {
+      height: 200px;
+    }
+  </style>
 	<script>
 		$(document).ready(function(){
 			$('#responsive-menu').mobileMenu();
             $( document ).tooltip();
+            $( "input" ).checkboxradio();
+            
+    $( "#number" )
+      .selectmenu()
+      .selectmenu( "menuWidget" )
+        .addClass( "overflow" );
+            
+            $( ".widget input[type=submit], .widget a, .widget button" ).button();
+    $( "button, input, a" ).click( function( event ) {
+      window.alert("Thank you for your inquiry");
+    } );
+ 
 		});
 	</script>
 </head>
@@ -57,20 +82,20 @@
 				<input type="email" name="email" maxlength="30" required="">
 			   
                 What VectaCorp products are you interested in?<br>
-			    <label for="vProspect"><input type="checkbox" name="product" value="vProspect" id="vProspect">vProspect 2.0</label>
-			    <label for="vConvert"><input type="checkbox" name="product" value="vConvert" id="vConvert">vConvert 2.0</label>
-			    <label for="vRetain"><input type="checkbox" name="product" value="vRetain" id="vRetain">vRetain 1.0</label>
+			    <label for="checkbox-1"><input type="checkbox" name="checkbox-1" id="checkbox-1" value="vProspect" >vProspect 2.0</label>
+			    <label for="checkbox-2"><input type="checkbox" name="checkbox-2" id="checkbox-2" value="vConvert" >vConvert 2.0</label>
+			    <label for="checkbox-3"><input type="checkbox" name="checkbox-3" id="checkbox-3" value="vRetain" >vRetain 1.0</label>
 			    
 			    <br>
 			    What is your current infrastructure?<br>
-			    <label for="Mac"><input type="radio" name="infrastructure" value="Mac" id="Mac">Mac</label>
-			    <label for="Linux"><input type="radio" name="infrastructure" value="Linux" id="Linux">Linux</label>
-			    <label for="Unix"><input type="radio" name="infrastructure" value="Unix" id="Unix">Unix</label>
-			    <label for="Windows"><input type="radio" name="infrastructure" value="Windows" id="Windows">Windows</label>
+			    <label for="radio-1"><input type="radio" name="radio-1" id="radio-1" value="Mac" >Mac</label>
+			    <label for="radio-2"><input type="radio" name="radio-1" id="radio-2" value="Linux" >Linux</label>
+			    <label for="radio-3"><input type="radio" name="radio-1" id="radio-3" value="Unix" >Unix</label>
+			    <label for="radio-4"><input type="radio" name="radio-1" id="radio-4" value="Windows" >Windows</label>
 
 			    <br>
 			    How many employees do you have?
-			    <select name="companysize">
+			    <select name="companysize" id="number">
                     <option value="1-10">1-10</option>
                     <option value="11-100">11-100</option>
                     <option value="101-1000">101-1000</option>
@@ -88,7 +113,7 @@
                 
 			    Questions or comments for our sales representatives?
 			    <textarea name="questions" size="30" rows="5"></textarea>
-			    <input type="submit" name="submit" value="Submit Now">
+			    <input class="ui-button ui-widget ui-corner-all" type="submit" name="submit" value="Submit Now">
 		    	</fieldset>
 			</form>
 	    </section>
